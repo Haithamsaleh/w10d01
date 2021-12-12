@@ -11,16 +11,19 @@ export async function getStaticProps(context) {
 
 function Posts({ posts }) {
   return (
-    <ul>
+    <div className="posts">
+    
       {posts.map((post) => (
         <Link href={`posts/${post.id}`} key={post.id}>
-          <li>
-            <h2>{post.title}</h2>
+            <div>
+            <h2 >{post.title}</h2>
             <p>{post.body}</p>
-          </li>
+            </div>
+          
         </Link>
       ))}
-    </ul>
+    
+    </div>
   );
 }
 

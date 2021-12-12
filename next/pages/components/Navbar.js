@@ -1,17 +1,19 @@
 import Link from "next/link";
 import Image from "next/image";
+import styles from "./../../styles/navbar.module.css"
 const NavBar = () => {
     return (   
-    <div>
+    <div className="module.nav">
         <ul>
-            <Link href="/"><li><Image src="/logo.png" width={100} height={100} /></li></Link>
+            <Link href="/"><li><Image src="/logo.png" width={200} height={50} /></li></Link>
             <Link href="/" ><li>Home</li></Link>
             <Link href="/about"><li>About</li></Link>
             <Link href="/contact"><li>contact</li></Link>
             <Link href="/posts"><li>posts</li></Link>
 
         </ul>
-        </div> );
+        </div>
+         );
 }
  
 export default NavBar;
